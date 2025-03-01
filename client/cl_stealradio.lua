@@ -70,8 +70,6 @@ end)
 
 RegisterNetEvent("stealradiotimeout")
 AddEventHandler("stealradiotimeout", function()
-    --Wait(Config.StealTimeout)
-    --StoleRadio = false
     SetTimeout(Config.StealTimeout, function()
         StoleRadio = false
     end)
