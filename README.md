@@ -30,11 +30,15 @@ This script allows you to steal radios from vehicles.
 
 # Requirements
 QB-LOCK - https://github.com/Nathan-FiveM/qb-lock
+
 QB-POLICEJOB - https://github.com/qbcore-framework/qb-policejob
+
 QB-MENU - https://github.com/qbcore-framework/qb-menu
+
 QB-TARGET - https://github.com/qbcore-framework/qb-target
 
 # Support
 https://dsc.gg/CxCCore
+
 https://discord.gg/5txzBEqW6h
 
