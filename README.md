@@ -6,10 +6,15 @@ This script allows you to steal radios from vehicles.
 
 # Features
 *+Timeout System*
+
 *+Minigame Integration*
+
 *+Police Alerting*
+
 *+Dissasembly Location*
+
 *+Configurable Items.*
+
 *+QB-Target Integration.*
 
 # QB-CORE/SHARED/ITEMS.LUA
