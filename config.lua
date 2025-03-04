@@ -9,6 +9,11 @@ Config.RadioRemovalItem = "c_radiokit" -- Item wich will trigger radio stealing 
 --Inventory Settings
 Config.Inventory = "qb" -- For now only qb/ox/custom inventories
 
+--Exports Setting
+Config.TargetExport = "qb-target" -- Target export
+Config.MenuExport = "qb-menu" -- Menu export
+Config.GameScript = "qb-lock" -- Minigame export
+
 --Dissasembly HighEnd Settings
 Config.HighDissasemblyItem = "copper" -- When you dissasembly highend radio this will be your reward
 Config.HighDissasemblyItem2 = "iron" -- When you dissasembly highend radio this will be your reward
@@ -44,8 +49,3 @@ Config.PoliceNightAlertChance = 0.03 -- Chance of alerting police at night (time
 --Minigame Settings
 Config.Circles = 5 -- Max circles
 Config.CircleTime = 20 -- Time settings for circles
-
---Exports Setting
-Config.TargetExport = "qb-target" -- Target export
-Config.MenuExport = "qb-menu" -- Menu export
-Config.GameScript = "qb-lock" -- Minigame export
