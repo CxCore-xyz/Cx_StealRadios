@@ -7,7 +7,7 @@ Config.DissasemblyLocation = vector3(1343.317, 4391.5581, 44.515762) -- Location
 Config.RadioRemovalItem = "c_radiokit" -- Item wich will trigger radio stealing action
 
 --Inventory Settings
-Config.Inventory = "qb" -- For now only qb/ox inventories
+Config.Inventory = "qb" -- For now only qb/ox/custom inventories
 
 --Dissasembly HighEnd Settings
 Config.HighDissasemblyItem = "copper" -- When you dissasembly highend radio this will be your reward
