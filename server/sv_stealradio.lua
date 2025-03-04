@@ -8,24 +8,42 @@ end)
 
 RegisterServerEvent('stealradio:reward:lowend')
 AddEventHandler('stealradio:reward:lowend', function()
-	local src = source
-        local Player = QBCore.Functions.GetPlayer(src)
-	Player.Functions.AddItem(Config.LowEndItem, 1)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    if Config.Inventory == "qb" then 
+        Player.Functions.AddItem(Config.LowEndItem, 1)
 	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.LowEndItem], "add")
+    elseif Config.Inventory == "ox" then
+        exports.ox_inventory:AddItem(src, Config.LowEndItem, 1) 
+    elseif Config.Inventory == "custom" then
+        print('Add you custom inventory at Cx_StealrRadios/server/sv_stealradio.lua:18')
+    end
 end)
 
 RegisterServerEvent('stealradio:reward:highend')
 AddEventHandler('stealradio:reward:highend', function()
-	local src = source
-        local Player = QBCore.Functions.GetPlayer(src)
-	Player.Functions.AddItem(Config.HighEndItem, 1)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    if Config.Inventory == "qb" then 
+        Player.Functions.AddItem(Config.HighEndItem, 1)
 	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.HighEndItem], "add")
+    elseif Config.Inventory == "ox" then
+        exports.ox_inventory:AddItem(src, Config.HighEndItem, 1) 
+    elseif Config.Inventory == "custom" then
+        print('Add you custom inventory at Cx_StealrRadios/server/sv_stealradio.lua:33')
+    end		
 end)
 
 RegisterServerEvent('stealradio:remove:item')
 AddEventHandler('stealradio:remove:item', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    Player.Functions.RemoveItem(Config.RadioRemovalItem, 1)
-    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.RadioRemovalItem], "remove")
+    if Config.Inventory == "qb" then 
+        Player.Functions.AddItem(Config.RadioRemovalItem, 1)
+	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.RadioRemovalItem], "remove")
+    elseif Config.Inventory == "ox" then
+        ox_inventory:RemoveItem(src, Config.RadioRemovalItem, 1)
+    elseif Config.Inventory == "custom" then
+        print('Add you custom inventory at Cx_StealrRadios/server/sv_stealradio.lua:47')
+    end	
 end)
