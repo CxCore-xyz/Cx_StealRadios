@@ -47,3 +47,14 @@ AddEventHandler('stealradio:remove:item', function()
         print('Add you custom inventory at Cx_StealrRadios/server/sv_stealradio.lua:47')
     end	
 end)
+
+AddEventHandler('onResourceStart', function(resource)
+   if resource == GetCurrentResourceName() then
+	Citizen.Wait(5000)
+        print('^2>>-----------------^4CxCore^2----------------<<')
+	print('^4Cx_StealRadios ^0(Created By CxCore)')
+        print('^1Discord : ^0https://discord.gg/CcVQHbJCSH')
+        print('^5Discord #2 : ^0https://dsc.gg/CxCCore')
+        print('^2>>-----------------^4CxCore^2----------------<<')
+   end
+end)
